@@ -1,0 +1,23 @@
+name: smart_commute_fix
+description: A Flutter app for smart commute routes.
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Ensure this matches your 'flutter --version' output (e.g., if you're on Flutter 3.22.x, this is correct).
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.1 # Kept: For geocoding if needed (though not used with flutter_map removal)
+  http: ^1.4.0        # Kept: As discussed previously, updated version
+  flutter_dotenv: ^5.2.1 # Kept: As discussed previously, updated version
+  cupertino_icons: ^1.0.2 # Kept: Already latest
+   # Kept: As discussed previously, updated version
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Recommended: Good practice to include for linting.
+
+flutter:
+  uses-material-design: true
